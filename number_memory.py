@@ -38,7 +38,7 @@ while not keyboard.is_pressed("q"):
         #plt.imshow(img)
         #plt.show()
         pytesseract.tesseract_cmd = r'D:\Program Files\Tesseract-OCR\tesseract.exe'
-        output = pytesseract.image_to_string(img, config='--psm 6 -c tessedit_char_whitelist=0123456789')
+        output = pytesseract.image_to_string(img, config='--psm 7 -c tessedit_char_whitelist=0123456789')
 
         if (len(output) > 0):
             numbers = []

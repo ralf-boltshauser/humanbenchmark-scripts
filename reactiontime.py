@@ -14,11 +14,8 @@ def rgbint2rgbtuple(x, y):
 
 stop = False
 while (not stop):
-        
     color = rgbint2rgbtuple(500, 500)
-    print(color)
     if (color['r'] == 106 and color['g'] == 219 and color['b'] == 75):
-        print("CLIIICK NOW!!!")
         pyautogui.click(500, 500)
         sleep(0.5)
         pyautogui.click(500, 500)
